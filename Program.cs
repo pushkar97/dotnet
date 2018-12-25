@@ -6,7 +6,9 @@ namespace myApp
     {
         static void Main(string[] args) 
         {
-            for (int i = 0; i <= 5; i++)
+            Console.Write("Enter no of rows : ");
+            int lineCount = Convert .ToInt32(Console.ReadLine());
+            for (int i = 0; i <= lineCount; i++)
             {
                 for (int j = 0; j <= i; j++)
                 {
