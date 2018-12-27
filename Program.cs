@@ -1,21 +1,21 @@
 ﻿using System;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace myApp
 {
     class Program
     {
+        private IWebDriver driver;
+        public Program(IWebDriver driver)
+        {
+            this.driver = driver;
+        }
+
         static void Main(string[] args) 
         {
-            Console.Write("Enter no of rows : ");
-            int lineCount = Convert .ToInt32(Console.ReadLine());
-            for (int i = 0; i < lineCount; i++)
-            {
-                for (int j = 0; j <= i; j++)
-                {
-                    Console.Write(j);
-                }
-                Console.WriteLine();
-            }
+            Program p1 = new Program(new ChromeDriver(@"D:\Work\Advanced Selenium Libs\Drivers"));
+            p1.driver.Navigate().GoToUrl("https://www.joecolantonio.com/HpSupport.html");
         }
     }
 }
