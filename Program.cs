@@ -12,6 +12,7 @@ namespace myApp
         {
             //Program p1 = new Program();
             driver.Navigate().GoToUrl("https://www.google.co.in");
+            driver.FindElement(By.Name("q")).SendKeys("abc");
         }
     }
 }
