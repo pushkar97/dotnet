@@ -10,9 +10,9 @@ namespace myApp
 
         static void Main(string[] args) 
         {
-            //Program p1 = new Program();
             driver.Navigate().GoToUrl("https://www.google.co.in");
             driver.FindElement(By.Name("q")).SendKeys("abc");
+            driver.FindElement(By.Name("btnK")).Click();
         }
     }
 }
