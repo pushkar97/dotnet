@@ -1,7 +1,7 @@
 ﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-
+using NUnit.Framework;
 
 namespace myApp
 {
@@ -9,7 +9,7 @@ namespace myApp
     {
         // private static IWebDriver driver = new ChromeDriver(@"D:\Work\Advanced Selenium Libs\Drivers");
         // private static IJavaScriptExecutor jsExecutor= (IJavaScriptExecutor)driver;
-        static void Main(string[] args) 
+        static void Test(string[] args) 
         {
             using(IWebDriver driver = new ChromeDriver(@"D:\Work\Advanced Selenium Libs\Drivers")){
                 //driver.Navigate().GoToUrl("https://www.google.co.in");
@@ -37,7 +37,7 @@ namespace myApp
         public void NUnitTest(){
             IWebDriver driver = new ChromeDriver(@"D:\Work\Advanced Selenium Libs\Drivers");
             driver.Url = "https://www.google.co.in";
-            driver.FindElement(By.Name("q")).SendKeys("abc");
+            driver.FindElement(By.Name("q")).SendKeys("jazz");
             driver.FindElement(By.Name("q")).Submit();
             driver.Close();
         }

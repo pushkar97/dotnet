@@ -9,3 +9,6 @@ D:\Work\dotnet\myApp\obj\Debug\netcoreapp2.2\myApp.AssemblyInfoInputs.cache
 D:\Work\dotnet\myApp\obj\Debug\netcoreapp2.2\myApp.AssemblyInfo.cs
 D:\Work\dotnet\myApp\obj\Debug\netcoreapp2.2\myApp.dll
 D:\Work\dotnet\myApp\obj\Debug\netcoreapp2.2\myApp.pdb
+D:\Work\dotnet\myApp\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+D:\Work\dotnet\myApp\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+D:\Work\dotnet\myApp\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
