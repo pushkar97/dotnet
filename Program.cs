@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
+
 namespace myApp
 {
     class Program
@@ -31,6 +32,14 @@ namespace myApp
             // }finally{
             //     driver.Close();
             // }
+        }
+        [Test]
+        public void NUnitTest(){
+            IWebDriver driver = new ChromeDriver(@"D:\Work\Advanced Selenium Libs\Drivers");
+            driver.Url = "https://www.google.co.in";
+            driver.FindElement(By.Name("q")).SendKeys("abc");
+            driver.FindElement(By.Name("q")).Submit();
+            driver.Close();
         }
     }
 }
